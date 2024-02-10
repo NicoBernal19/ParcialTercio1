@@ -14,81 +14,81 @@ public class RegistryTest {
     
     @Test
     public void validateAgeFor18YearsOld() {
-        Person person = new Person("nicolas", 1000184936, 18, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 18, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.VALID, result);
     }
 
     @Test
     public void validateAgeFor17YearsOld() {
-        Person person = new Person("nicolas", 1000184936, 17, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 17, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.UNDERAGE, result);
     }
 
     @Test
     public void validateAgeFor19YearsOld() {
-        Person person = new Person("nicolas", 1000184936, 19, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 19, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.UNDERAGE, result);
     }
 
     @Test
     public void validateAgeFor135YearsOld() {
-        Person person = new Person("nicolas", 1000184936, 135, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 135, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.UNDERAGE, result);
     }
 
     @Test
-    public void validateAgeForInvalidAge() {
-        Person person = new Person("nicolas", 1000184936, -1, MALE, true);
+    public void validateAgeForInvalidAgeMinus1() {
+        Person person = new Person("nicolas", 1000184936, -1, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
-        Assert.assertEquals(RegisterResult.INVALID_AGE result);
+        Assert.assertEquals(RegisterResult.INVALID_AGE, result);
     }
 
     @Test
-    public void validateAgeForInvalidAge() {
-        Person person = new Person("nicolas", 1000184936, -100, MALE, true);
+    public void validateAgeForInvalidAgeMinus100() {
+        Person person = new Person("nicolas", 1000184936, -100, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
-        Assert.assertEquals(RegisterResult.INVALID_AGE result);
+        Assert.assertEquals(RegisterResult.INVALID_AGE, result);
     }
 
     @Test
     public void validateAgeForInvalidAge135() {
-        Person person = new Person("nicolas", 1000184936, 136, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 136, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
-        Assert.assertEquals(RegisterResult.INVALID_AGE result);
+        Assert.assertEquals(RegisterResult.INVALID_AGE, result);
     }
 
     @Test
     public void validateIfIsAlive() {
-        Person person = new Person("nicolas", 1000184936, 18, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 18, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.VALID, result);
     }
 
     @Test
     public void validateIfIsDead() {
-        Person person = new Person("nicolas", 1000184936, 18, MALE, false);
+        Person person = new Person("nicolas", 1000184936, 18, Gender.MALE, false);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.DEAD, result);
     }
 
     @Test
     public void validateIfPersonIsDuplicated() {
-        Person person = new Person("nicolas", 1000184936, 18, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 18, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
-        Person person2 = new Person("santiago", 1000184936, 26, MALE, true);
+        Person person2 = new Person("santiago", 1000184936, 26, Gender.MALE, true);
         RegisterResult result2 = registry.registerVoter(person2);
         Assert.assertEquals(RegisterResult.DUPLICATED, result2);
     }
 
     @Test
     public void validateIfPersonIsNotDuplicated() {
-        Person person = new Person("nicolas", 1000184936, 18, MALE, true);
+        Person person = new Person("nicolas", 1000184936, 18, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
-        Person person2 = new Person("santiago", 1000456789, 26, MALE, true);
+        Person person2 = new Person("santiago", 1000456789, 26, Gender.MALE, true);
         RegisterResult result2 = registry.registerVoter(person2);
         Assert.assertEquals(RegisterResult.VALID, result2);
     }
