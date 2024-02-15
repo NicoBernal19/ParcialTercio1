@@ -1,4 +1,5 @@
 # AeroDescuentos
+# Nicolas Bernal
 
 ### 1 De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
 
@@ -55,7 +56,7 @@ public long calculoTarifa(long tarifaBase, int diasAntelacion, int edad)
    - Las condiciones limite de los días de antelacion son -1 y 0
    - Las condiciones limite de la tarifa son -1 y 0
  
-# 5 Para cada una de las condiciones de frontera anteriores, defina casos de prueba específicos.
+### 5 Para cada una de las condiciones de frontera anteriores, defina casos de prueba específicos.
 
    | Número | Ejemplo | ResultadoEsperado |
    | ------ | --------------------- | --------- |
