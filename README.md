@@ -37,6 +37,9 @@ Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar 
 
 Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la clase AppTest con resultado exitoso.
 
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/2.jpg">
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/3.jpg">
+
 ## EJERCICIO “REGISTRADURÍA”
 Se va a crear un proyecto base para un cliente en la registraduría, en el cual se registrarán personas con intención de votar para las próximas
 elecciones y se generarán los certificados electorales de aquellas personas cuyo voto sea válido.
@@ -255,6 +258,9 @@ Complete la implementación de la clase `RegistryTest.java` con (al menos) un m�
 
 Complete la implementación del método `registerVoter` en la clase `Registry.java` para retornar el resultado esperado según la entrada.
 
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/4.jpg">
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/5.jpg">
+
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
 ### REALIZAR DISEÑO DE PRUEBAS
@@ -338,12 +344,16 @@ Para adicionar una librería personalizada al repositorio local de maven puede e
 ```sh
 $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
 ```
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/6.jpg">
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/7.jpg">
 
 Cree el archivo `TarifasTest.java` en el directorio `src/test/java/edu/eci/cvds/tdd/aerodescuentos`.
 
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método `calculoTarifa` de la clase `edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos`, que se encuentran dentro del JAR de la librería personalizada.
 
 Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
+
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/8.jpg">
 
 ## ENTREGAR
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
