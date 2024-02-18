@@ -10,7 +10,7 @@ Artefacto (artifactId): ClasesEquivalencia
 Paquete (package): edu.eci.cvds.tdd
 archetypeArtifactId: maven-archetype-quickstart
 ```
-<img width="588" alt="imagen" src="https://github.com/PDSW-ECI/labs/assets/4140058/5d18fa63-a6e4-40f9-af24-2589e8a3372e">
+<img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab3/blob/master/img/1.jpg">
 
 ### ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO
 
