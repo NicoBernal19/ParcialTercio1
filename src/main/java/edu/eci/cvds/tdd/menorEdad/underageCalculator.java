@@ -1,8 +1,5 @@
 package edu.eci.cvds.tdd.menorEdad;
 
-import edu.eci.cvds.tdd.registry.Person;
-import edu.eci.cvds.tdd.registry.RegisterResult;
-
 public class underageCalculator {
     public static final int MAX_AGE = 135;
     public static final int UNDERAGE = 18;
